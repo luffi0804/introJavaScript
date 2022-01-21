@@ -11,6 +11,7 @@ const cambiarNombre = () => {
   let nombre = prompt("Ingresa tu nombre");
   nombreUsuario.innerHTML = "Bienvenido/a: " + nombre;
   localStorage.setItem("nombre", nombre); //local storage
+  console.log(nombre);
 };
 
 if (localStorage.getItem("nombre")) {
